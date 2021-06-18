@@ -1,2 +1,2 @@
 # ferramentas-scripts
-Colaboradores: DomDomDim
+Colaboradores: DomDomDim , Mug93r
