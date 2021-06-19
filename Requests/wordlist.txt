@@ -1,3 +1,4 @@
+#Coloque sua wordlist <3 
 /tmp
 /.ssh
 /yellow
