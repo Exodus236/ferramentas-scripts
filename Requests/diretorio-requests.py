@@ -12,10 +12,14 @@ def requi():
         requisicao=requests.get(request)
         print(requisicao.status_code)
         if requisicao.status_code == 404:
-            print("Off -> :( ")
+            print("404 Off -> :( ")
         elif requisicao.status_code == 200:
-            print("Diretorio vivo -> :) !!!!")
+            print("200  On -> :) !!!!")
+        elif requisicao.status_code == 403:
+            print("403 -> On (Forbidden) !!)
+        elif requisicao.status_code == 301:
+            print("301 -> On (Redirect) !!)
         else:
-            print("Nao Entendido")
+            print("...")
 
 requi()
