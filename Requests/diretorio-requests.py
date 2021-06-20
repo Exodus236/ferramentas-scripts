@@ -16,9 +16,9 @@ def requi():
         elif requisicao.status_code == 200:
             print("200  On -> :) !!!!")
         elif requisicao.status_code == 403:
-            print("403 -> On (Forbidden) !!)
+            print("403 -> On (Forbidden) !!")
         elif requisicao.status_code == 301:
-            print("301 -> On (Redirect) !!)
+            print("301 -> On (Redirect) !!")
         else:
             print("...")
 
