@@ -11,7 +11,7 @@ for cada in portas:
     neti = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     neti.settimeout(0.05)
     cod = neti.connect_ex((ip, port)) 
-    if cod == 0: #0 = Success
+    if cod == 0:
         print (str(port) + " -> Aberta")
     else:
         print (str(port) + " -> Fechada")
