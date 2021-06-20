@@ -6,7 +6,6 @@ import sys
 import os 
 import requests 
 import paramiko
-from paramiko import SSHClient
 import getpass
 
 
@@ -29,8 +28,6 @@ def ssh():
         ssh.connect(hostname=f"{alvo}",username=f"{usuario}",password=f"{senha}")
         cmd=input("Passe comando $: ")
         stdin, stdout, stderr = ssh.exec_command(f"{cmd} \n")
-        stdin.write('y/n')
-        stdin.flush()
         print(stdout.readlines())
 
 ssh()
