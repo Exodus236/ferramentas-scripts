@@ -2,4 +2,9 @@ source 'https://rubygems.org'
 
 gem 'os'
 gem 'requests'
-gem "cpf_cnpj"
+gem "cpf_cnpj" 
+gem 'sinatra'
+gem 'rake'
+gem "httpx"
+gem 'net-http'
+
