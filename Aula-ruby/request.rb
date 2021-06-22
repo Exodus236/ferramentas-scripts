@@ -42,7 +42,6 @@ def http
     alvo=gets.chomp
     res=Requests.get("http://#{alvo}")
     puts "Status -> #{res.status}"
-    criararquivo
 end
 
 def https
@@ -53,17 +52,6 @@ def https
     back
 end
 
-def criararquivo
-    print "Deseja salva o diretorio? s/n"
-    pergunta=gets.chomp
-    if pergunta == 's'
-        arquivo=File.new("arquivo.txt", "w")
-        arquivo.puts "Salvo"
-        back
-    elsif pergunta == 'n'
-        back
-    end
-end
 
 painel
 
