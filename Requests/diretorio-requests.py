@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 import requests
 import time
@@ -12,13 +11,13 @@ def requi():
         requisicao=requests.get(request)
         print(requisicao.status_code)
         if requisicao.status_code == 404:
-            print("404 Off -> :( ")
+            print(f"{cada} 404 Off -> :( ")
         elif requisicao.status_code == 200:
-            print("200  On -> :) !!!!")
+            print(f"{cada} 200  On -> :) !!!!")
         elif requisicao.status_code == 403:
-            print("403 -> On (Forbidden) !!")
+            print(f"{cada} 403 -> On (Forbidden) !!")
         elif requisicao.status_code == 301:
-            print("301 -> On (Redirect) !!")
+            print(f"{cada} 301 -> On (Redirect) !!")
         else:
             print("...")
 
