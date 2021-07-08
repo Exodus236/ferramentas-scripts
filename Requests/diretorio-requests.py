@@ -6,7 +6,7 @@ import os
 def requi():
     alvo=input("alvo: ")
     wordl=input("Nome da wordlist: ")
-    arquivo=open(f"{question}", "r")
+    arquivo=open(f"{wordl}", "r")
     for cada in arquivo:
         request=alvo + cada
         requisicao=requests.get(request)
